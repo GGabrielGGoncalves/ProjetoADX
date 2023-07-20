@@ -17,7 +17,7 @@
     <v-btn prepend-icon="$vuetify" stacked variant="text" color="indigo-darken-3" router to = "/carrinho">
       Carrinho
     </v-btn>
-    
+    <v-spacer></v-spacer>
     <v-container>
       Olá, Daniel, temos novidades pra você
     </v-container>

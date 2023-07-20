@@ -41,34 +41,53 @@
   <b>Tamanho do Quadro</b>
 
   
+
+
+
+
+  
   <v-layout row wrap>
-    <v-btn variant="outlined">
+    <v-btn-toggle
+        v-model="text"
+        rounded="0"
+        color="indigo-darken-3"
+        group
+      >
+    <v-btn value="15,5" >
       15,5"
     </v-btn>
-    <v-btn variant="outlined">
+    <v-btn value="17" >
       17"
     </v-btn>
-    <v-btn variant="outlined">
+    <v-btn value="19" >
       19"
     </v-btn>
-    <v-btn variant="outlined">
+    <v-btn value="21" >
       21"
     </v-btn>
+  </v-btn-toggle>
   </v-layout>
   <b>Escolha a cor</b>
   <v-layout row wrap>
-     <v-btn variant="outlined">
-      Vermelho
+    <v-btn-toggle
+        v-model="text2"
+        rounded="0"
+        color="indigo-darken-3"
+        group
+      >
+    <v-btn value="1" >
+      Amarelo
     </v-btn>
-    <v-btn variant="outlined">
+    <v-btn value="2" >
       Azul
     </v-btn>
-    <v-btn variant="outlined">
+    <v-btn value="3" >
       Verde
     </v-btn>
-    <v-btn variant="outlined">
-      Amarela
+    <v-btn value="4" >
+      Vermelho
     </v-btn>
+  </v-btn-toggle>
   </v-layout>
   <h3>R$2.999,00</h3>
   <h4>A vista no Pix ou Boleto ou ate 12x de R$259,91 com juros</h4>
@@ -208,6 +227,8 @@ export default {
             src: './src/assets/bike.png',
           },
         ],
+        text: 'center',
+        text2: 'center',
     }),
   }
 </script>
